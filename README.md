@@ -5,7 +5,7 @@ Sistema de escritorio desarrollado en **C# (.NET)** con interfaz en **Windows Fo
 ---
 
 ## Demostración en Video
-👉 [Ver demostración en YouTube]([https://www.youtube.com/watch?v=TU_ENLACE_AQUI](https://www.youtube.com/watch?v=UC4XEWAWvew))
+👉 [Ver demostración en YouTube]([https://www.youtube.com/watch?v=UC4XEWAWvew])
 
 ---
 
