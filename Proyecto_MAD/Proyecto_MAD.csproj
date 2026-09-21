@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21C67BEC-F5DF-4DAD-B2BC-ED8D79105302}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_MAD</RootNamespace>
+    <AssemblyName>Proyecto_MAD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalendarioHabitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarioHabitaciones.Designer.cs">
+      <DependentUpon>CalendarioHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarContrasena.Designer.cs">
+      <DependentUpon>CambiarContrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cancelaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancelaciones.Designer.cs">
+      <DependentUpon>Cancelaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInandOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInandOut.Designer.cs">
+      <DependentUpon>CheckInandOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnlaceClientes.cs" />
+    <Compile Include="EnlaceDB.cs" />
+    <Compile Include="EnlaceFactura.cs" />
+    <Compile Include="EnlaceHoteles.cs" />
+    <Compile Include="EnlaceReservaciones.cs" />
+    <Compile Include="EnlaceUsuarios.cs" />
+    <Compile Include="FacturaHospedaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaHospedaje.Designer.cs">
+      <DependentUpon>FacturaHospedaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionClientes.Designer.cs">
+      <DependentUpon>GestionClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionHoteles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionHoteles.Designer.cs">
+      <DependentUpon>GestionHoteles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionServicios_Habitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionServicios_Habitaciones.Designer.cs">
+      <DependentUpon>GestionServicios_Habitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionUsuarios.Designer.cs">
+      <DependentUpon>GestionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historial Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historial Cliente.Designer.cs">
+      <DependentUpon>Historial Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdministradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdministradores.Designer.cs">
+      <DependentUpon>MenuAdministradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuOperativos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOperativos.Designer.cs">
+      <DependentUpon>MenuOperativos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericUpDown.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteOcupacionHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteOcupacionHotel.Designer.cs">
+      <DependentUpon>ReporteOcupacionHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteVentas.Designer.cs">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservaciones.Designer.cs">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubicaciones.Designer.cs">
+      <DependentUpon>Ubicaciones.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalendarioHabitaciones.resx">
+      <DependentUpon>CalendarioHabitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarContrasena.resx">
+      <DependentUpon>CambiarContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancelaciones.resx">
+      <DependentUpon>Cancelaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckInandOut.resx">
+      <DependentUpon>CheckInandOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaHospedaje.resx">
+      <DependentUpon>FacturaHospedaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionClientes.resx">
+      <DependentUpon>GestionClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionHoteles.resx">
+      <DependentUpon>GestionHoteles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionServicios_Habitaciones.resx">
+      <DependentUpon>GestionServicios_Habitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionUsuarios.resx">
+      <DependentUpon>GestionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historial Cliente.resx">
+      <DependentUpon>Historial Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdministradores.resx">
+      <DependentUpon>MenuAdministradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuOperativos.resx">
+      <DependentUpon>MenuOperativos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReporteOcupacionHotel.resx">
+      <DependentUpon>ReporteOcupacionHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteVentas.resx">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservaciones.resx">
+      <DependentUpon>Reservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ubicaciones.resx">
+      <DependentUpon>Ubicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
